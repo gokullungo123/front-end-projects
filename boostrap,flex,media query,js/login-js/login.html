@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/images/login.png") ;
+    background-size: cover;
+   }
+
+   .container{
+    background-color: #a6834a79;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+   }
+
+   table{
+    width: 100%;
+    border-spacing: 10px;
+   }
+
+   input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a29e9e;
+    border-radius: 5px;
+   }
+
+   button {
+    width: 100%;
+    padding: 10px;
+    background-color: #120e39;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    } 
+
+   button:hover {
+    background-color: red;
+   }
+
+   .if-wrong {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/main/home.html" onsubmit="return validation()">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id="errName" class="if-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="if-wrong" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id="errPassword" class="if-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id="errEmail" class="if-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" formtarget="_blank">Submit</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="resetForm()">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="/login-js/login.js"></script>
+</body>
+</html>
