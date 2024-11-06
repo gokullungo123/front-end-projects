@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("loginbg.png") ;
+    background-size: cover;
+   }
+
+   .container{
+    background-color: #ffffff4f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+   }
+
+   table{
+    width: 100%;
+    border-spacing: 10px;
+   }
+
+   input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a29e9e;
+    border-radius: 5px;
+   }
+
+   button {
+    width: 100%;
+    padding: 10px;
+    background-color: #120e39;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    } 
+
+   button:hover {
+    background-color: #45a049;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td ><button type="submit"> <a href="home.html"> Submit</a> </button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

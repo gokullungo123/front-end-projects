@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog-Home</title>
+    <style>
+    body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    }
+
+    .head {
+     position: fixed;
+    text-align: center;
+    font-size: 40px;
+    font-family:serif;
+    background-color: #090810;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: 2px solid #3287a5;
+    top: 0;
+    z-index: 10;
+    word-spacing: 4px;
+    width: 100%;
+    }
+    
+
+   .container{
+    display: grid;
+    grid-template-columns: 3fr 9fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 80px;
+    }
+
+    .header{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #73757a;
+    border-bottom:4px solid #73757a ;
+    background-color: rgb(208, 203, 203);
+    }
+
+    span{
+        padding: 250px 170px;
+        line-height: 70px;
+        font-size: 35px;
+        color:rgb(181, 50, 50) ;
+    }
+
+    .left-sidebar{
+    border-right: 4px solid #73757a;
+    background-color: rgb(208, 203, 203);
+    color: black; 
+    font-size: 20px;
+    padding: 10px;
+    }
+
+    .left-sidebar ul{
+    list-style: none;
+    padding: 0;
+    }
+
+    ul li{
+    margin: 10px 0;
+    padding: 10px;
+    }
+
+   a{
+    text-decoration: none;
+    color: rgb(61, 14, 91);
+    }
+
+   a:hover{
+    padding: 15px;
+    color: blue;
+    }
+
+   a:active{
+    color: #7e8012;
+    }
+
+   h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+
+   .right-sidebar {
+    border-left: 5px solid #73757a;
+    padding-left: 20px;
+    }
+
+   .right-sidebar p {
+    margin: 10px 0;
+    }
+
+    img{
+    height: 380px;
+    width: 425px;
+    float: left;
+    margin-right: 10px;
+    }
+
+    .title{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline; 
+    }
+
+    .float{
+    float: right;
+    width: 400px;
+    columns: 1;
+    }
+
+    .float2{
+    float: left;
+    width: 100%;
+    columns: 1;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        News Blog
+    </div>
+    <div class="container">
+        <header class="header">
+            <a href="home.html"> <span>Home</span> </a>
+            <a href="about.html"> <span>About</span> </a>
+            <a href="login-page.html"> <span>login</span> </a>
+        </header>
+        <nav class="left-sidebar">
+            <h1 style="color: rgb(181, 50, 50);">Topic</h1>
+            <ul>
+                <li><a href="worldnews.html">World News</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="science.html">Science</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <img src="newsbg.png" class="img">
+            <b><p class="title">Welcome to News Blog!</p></b>
+            <div class="float">
+                <p><b>World News:</b> Stay updated with the latest happenings from around the globe. From political upheavals to significant global events, we bring you the most important news stories from every corner of the world. </p>
+                <p><b>Technology</b> Dive into the ever-evolving world of technology. Discover groundbreaking innovations, tech trends, gadget reviews, and expert opinions on everything from artificial intelligence to the latest smartphones.</p>
+                <p><b>Sports:</b> Catch up on all the excitement in the sports world. From major league games to international tournaments, get the latest scores, player profiles, and in-depth analysis of your favorite sports.</p>  <br>
+            </div>
+            <p class="float2"><b>Health:</b> Your health and well-being matter.Explore articles on fitness, nutrition, mental health, and medical breakthroughs. Stay informed about the best practices to lead a healthier and happier life.</p>
+            <p class="float2"><b>Science:</b> Unveil the wonders of the scientific world. Read about the latest research, scientific discoveries, and innovations that are shaping our understanding of the universe. </p>
+            <p class="float2"><b>Games:</b>Whether you're a casual gamer or a hardcore enthusiast, our gaming section has something for you. From game reviews and news to tips and tricks, stay ahead in the gaming world with our comprehensive coverage. Stay updated with the latest happenings from around the globe. From political upheavals to significant global events, we bring you the most important news stories from every corner of the world. </p>
+        </main>
+        <aside class="right-sidebar">
+            <p><b>Published on:</b> <br> July 6th 2024</p>
+            <p><b>Published by:</b> <br> Gokul s</p>
+        </aside>
+    </div>
+</body>
+</html>
